@@ -1,0 +1,318 @@
+/* 列表页样式 */
+
+/*list页面版心*/
+/*!里面有许多地方可以优化*/
+
+/* TODO 头部nav部分开始 这一部分后期还需要优化*/
+.top-nav {
+    width: 100%;
+    height: 190px;
+    background-color: #fff;
+}
+
+.top-nav nav li {
+    height: 62px;
+    line-height: 62px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.top-nav nav li span {
+    display: block;
+    float: left;
+    width: 66px;
+    margin-right: 26px;
+}
+
+.top-nav nav li .all {
+    padding: 3px 5px;
+    color: #fff;
+    background-color: #00a4ff;
+}
+
+.top-nav nav li div a {
+    padding: 5px 0;
+}
+
+.top-nav nav li:nth-child(3) {
+    border: none;
+}
+
+.top-nav nav li:first-child div {
+    float: right;
+    margin-right: 206px;
+}
+
+.top-nav nav li:nth-child(2) div {
+    float: right;
+    margin-right: 832px;
+}
+
+.top-nav nav li:nth-child(3) div {
+    float: right;
+    margin-right: 888px;
+}
+
+.top-nav nav li div a {
+    margin-left: 28px;
+    color: #adadad;
+}
+
+.top-nav nav li div a:hover {
+    color: #00a4ff;
+}
+
+/* 头部nav部分结束 */
+
+/* 列表模块开始 */
+.list {
+    position: relative;
+}
+
+.list .hd {
+    margin-top: 26px;
+    height: 36px;
+}
+
+.list .hd li {
+    float: left;
+    font-size: 16px;
+    margin-right: 38px;
+}
+
+.list .hd li a {
+    color: #666;
+}
+
+.list .hd li:hover a {
+    color: #00a4ff;
+}
+
+.list .hd div {
+    float: right;
+    color: #00a4ff;
+}
+
+.list .hd div a {
+    color: #00a4ff;
+    font-family: "楷体";
+}
+
+.list .hd div h2 {
+    display: inline-block;
+    margin: 0 126px 0 57px;
+    font-size: 16px;
+}
+
+/*列表模块身体开始*/
+
+.list .bd li {
+    position: relative;
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #ffffff;
+    margin: 0 15px 15px 0;
+    transition: all .3s;
+}
+
+.list .bd li a {
+    display: block;
+    width: 228px;
+    height: 270px;
+}
+
+.list .bd li img {
+    /*TODO 图片太大了,需要设置充满整个li*/
+    width: 100%;
+}
+
+.list .bd li h5,
+.list .bd li p {
+    padding: 0 22px;
+    margin-top: 12px;
+    line-height: 22px;
+}
+
+.list .bd li h5 {
+    font-size: 14px;
+    color: #050505;
+}
+
+.list .bd p {
+    color: #999;
+    font-size: 12px;
+}
+
+.list .bd p span {
+    color: #ff7c2d;
+    font-size: 14px;
+}
+
+.list .bd li:hover {
+    box-shadow: 0px 2px 5px 0px rgba(118, 118, 118, 0.5);
+    transform: translateY(-3px);
+    /*TODO 这个是鼠标经过li上移的动画*/
+}
+
+.list .bd .hot,
+.list .bd .new {
+    position: absolute;
+    top: 4px;
+    right: -4px;
+    width: 40px;
+    height: 24px;
+}
+
+.list .bd .hot {
+    background: url(../images/hot.png) no-repeat;
+}
+
+.list .bd .new {
+    background: url(../images/new.png) no-repeat;
+}
+
+/*列表模块身体结束*/
+
+/* 列表侧边栏开始 */
+.list .aside1 {
+    position: absolute;
+    right: 0;
+    width: 228px;
+    height: 530px;
+}
+
+.list .aside1 li,
+.list .aside2 li {
+    width: 228px;
+    height: 102px;
+    background-color: #fff;
+}
+
+.list .aside1 li a,
+.list .aside2 li a {
+    display: block;
+    width: 200px;
+    height: 102px;
+    padding-top: 18px;
+    margin-left: 13px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.list .aside1 li:first-child {
+    background: url(../uploads/banner.png);
+    overflow: hidden;
+}
+
+.list .aside1 li:first-child a,
+.list .aside2 li:first-child a {
+    padding: 14px 0px;
+    font-size: 12px;
+    color: #dcdcdc;
+    line-height: 18px;
+    border: 0;
+}
+
+.list .aside1 li:last-child a,
+.list .aside2 li:last-child a {
+    border: 0;
+}
+
+.list .aside1 li a h5,
+.list .aside1 li a p,
+.list .aside2 li a h5,
+.list .aside2 li a p {
+    padding: 0 22px;
+    line-height: 22px;
+}
+
+.list .aside1 li a h5,
+.list .aside2 li a h5 {
+    font-size: 14px;
+    color: #050505;
+}
+
+.list .aside1 p,
+.list .aside2 p {
+    margin-top: 8px;
+    color: #999;
+    font-size: 12px;
+}
+
+.list .aside1 p span,
+.list .aside2 p span {
+    color: #ff7c2d;
+    font-size: 14px;
+}
+
+.list .aside2 {
+    position: absolute;
+    top: 632px;
+    right: 0;
+    width: 228px;
+    height: 568px;
+}
+
+.list .aside2 h2 {
+    margin: 0 0 20px 24px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.list .aside2 li:first-child {
+    background: url(../uploads/banner.png);
+    overflow: hidden;
+}
+
+/* 列表侧边栏结束 */
+
+/* 列表模块结束 */
+
+/* 底部导航栏开始 */
+.bottom-nav {
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 33px;
+}
+
+.bottom-nav .left a,
+.bottom-nav .right a {
+    display: inline-block;
+    margin-right: 22px;
+    line-height: 40px;
+    color: #999;
+}
+
+.bottom-nav .right {
+    float: left;
+    margin-left: 32px;
+}
+
+.bottom-nav ul {
+    float: left;
+    margin-left: 10px;
+}
+
+.bottom-nav li {
+    float: left;
+    transition: all .3s;
+}
+
+.bottom-nav li a {
+    display: block;
+    width: 40px;
+    text-align: center;
+    margin-right: 1px;
+    line-height: 40px;
+    color: #999;
+}
+
+.bottom-nav li:hover {
+    background-color: #00a4ff;
+}
+
+.bottom-nav .left a:hover,
+.bottom-nav .right a:hover {
+    color: #00a4ff;
+}
+
+/* 底部导航栏结束 */

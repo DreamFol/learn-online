@@ -1,0 +1,688 @@
+/* 首页样式 */
+/* banner部分开始 */
+.banner {
+    /*TODO 这是一个通栏的的banner背景*/
+    width: 100%;
+    height: 420px;
+    background-color: #1c036c;
+    /*?下面这行代码是为了让头部固定定位的时候不被压住*/
+    /* margin-top: 100px; */
+}
+
+.banner-in {
+    /*TODO 这是banner里面的背景图*/
+    position: relative;
+    height: 420px;
+    background: url(../uploads/banner.png) no-repeat;
+    overflow: hidden;
+    /*这里用overflow:hidden是因为图片可能是斜的或者会超出来*/
+}
+
+/* banner中的侧边栏开始 */
+.banner-in aside {
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, .3);
+    padding: 12px 0;
+}
+
+.banner-in aside li a {
+    display: block;
+    line-height: 44px;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.banner a span {
+    font-family: "楷体";
+    float: right;
+}
+
+.banner-in li a:hover {
+    color: #00a4ff;
+}
+
+.banner-in li:first-child a {
+    /*!这块代码可以不用,后期自己取消*/
+    color: #00a4ff;
+}
+
+/* banner中的侧边栏结束 */
+
+/* banner中课程模块开始 */
+.timetable {
+    margin-top: 50px;
+    width: 226px;
+    height: 300px;
+    background-color: #fff;
+}
+
+.timetable dt {
+    width: 226px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 48px;
+    letter-spacing: 2px;
+    /*文字间距*/
+    color: #fff;
+    background-color: #9bceea;
+}
+
+.timetable dd {
+    width: 186px;
+    margin: 0 20px;
+}
+
+.timetable dd a {
+    display: block;
+    color: #4e4e4e;
+}
+
+.timetable dd:nth-of-type(1) a,
+.timetable dd:nth-of-type(3) a {
+    height: 68px;
+    padding: 20px 0;
+    border-bottom: 2px solid #eaeaea;
+}
+
+.timetable dd:nth-of-type(2) a {
+    height: 60px;
+    padding: 12px 0;
+    border-bottom: 2px solid #eaeaea;
+}
+
+.timetable dd:nth-of-type(3) a {
+    border: 0;
+}
+
+.timetable dd:nth-of-type(4) a {
+    margin-top: 4px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #00a4ff;
+    border: #00a4ff solid 1px;
+}
+
+.timetable dd h4 {
+    font-size: 16px;
+}
+
+.timetable dd p {
+    font-size: 12px;
+    color: #bfbfbf;
+    /* padding-top: 2px; */
+}
+
+.timetable a:hover,
+.timetable a:hover p {
+    color: #00a4ff;
+}
+
+.timetable dd:nth-of-type(4) a:hover {
+    background-color: #00a4ff;
+    color: #fff;
+}
+
+/* banner中课程模块结束 */
+
+/*轮播图小圆点开始*/
+.banner-in .dots {
+    position: absolute;
+    left: 487px;
+    bottom: 34px;
+    width: 159px;
+    height: 12px;
+    /* background-color: #fff; */
+}
+
+.banner-in .dots li {
+    float: left;
+    background-color: #fafafa;
+    border-radius: 50%;
+    opacity: 0.4;
+    margin-left: 12px;
+}
+
+.banner-in .dots li a {
+    display: block;
+    width: 12px;
+    height: 12px;
+}
+
+.banner-in .dots li:first-child {
+    width: 19px;
+    height: 12px;
+    border-radius: 12px;
+    opacity: 1;
+}
+
+/*轮播图小圆点结束*/
+
+/* banner部分结束 */
+
+/* 精品推荐导航栏开始 */
+.recommend {
+    margin-top: 8px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, 0.2);
+}
+
+.recommend a {
+    font-size: 16px;
+    border-right: 1px solid #bfbfbf;
+    padding: 0 30px;
+}
+
+.recommend a:first-child {
+    color: #00a4ff;
+}
+
+.recommend a:nth-last-child(2) {
+    border: 0;
+}
+
+.recommend a:last-child {
+    float: right;
+    font-size: 14px;
+    border: 0;
+    color: #00a4ff;
+}
+
+/* 精品推荐导航栏结束 */
+
+/* 精品推荐模块开始 */
+.recom-products {
+    /*TODO 这里不用给宽高,用盒子撑开,后期可能要添加或者删除商品*/
+    margin-top: 34px;
+}
+
+/* product里面的头部开始 */
+.recom-products .recom-hd {
+    height: 40px;
+}
+
+.recom-products .recom-hd h2 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+
+.recom-products .recom-hd a {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    padding: 10px 28px 0 0;
+}
+
+.recom-hd a:hover {
+    color: #00a4ff;
+}
+
+/* product里面的头部结束 */
+
+/* product里面的身体开始 */
+.recom-products .recom-bd li {
+    position: relative;
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    margin: 0 15px 14px 0;
+    transition: all .3s;
+    /*TODO 这个是动画过渡*/
+}
+
+.recom-products .recom-bd li a {
+    display: block;
+    width: 228px;
+    height: 270px;
+}
+
+.recom-products .recom-bd li:nth-child(5n) {
+    margin: 0;
+}
+
+.recom-products .recom-bd li img {
+    /*TODO 图片太大了,需要设置充满整个li*/
+    width: 100%;
+}
+
+.recom-products .recom-bd li h5,
+.recom-products .recom-bd li p {
+    padding: 0 22px;
+    margin-top: 12px;
+    line-height: 22px;
+}
+
+.recom-products .recom-bd li h5 {
+    font-size: 14px;
+    color: #050505;
+}
+
+.recom-products .recom-bd p {
+    color: #999;
+    font-size: 12px;
+}
+
+.recom-products .recom-bd p span {
+    color: #ff7c2d;
+    font-size: 14px;
+}
+
+.recom-products .recom-bd li:hover {
+    box-shadow: 0px 2px 5px 0px rgba(118, 118, 118, 0.5);
+    transform: translateY(-3px);
+    /*TODO 这个是鼠标经过li上移的动画*/
+}
+
+.recom-products .recom-bd .hot,
+.recom-products .recom-bd .new {
+    position: absolute;
+    top: 4px;
+    right: -4px;
+    width: 40px;
+    height: 24px;
+}
+
+.recom-products .recom-bd .hot {
+    background: url(../images/hot.png) no-repeat;
+}
+
+.recom-products .recom-bd .new {
+    background: url(../images/new.png) no-repeat;
+}
+
+/* product里面的身体结束 */
+
+/*aside侧边栏开始*/
+.aside {
+    /* position: fixed; */
+    position: absolute;
+    top: 911px;
+    left: 10px;
+    width: 183px;
+    height: 425px;
+    color: #050505;
+    background-color: #fff;
+    padding: 27px 25px;
+}
+
+.aside li {
+    height: 34px;
+}
+
+.aside li a {
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    letter-spacing: 1px;
+}
+
+.aside li a:hover {
+    color: #00a4ff;
+}
+
+/* 精品推荐模块结束 */
+
+/* !下面编程入门和数据分析师两个模块的样式一样,所以我写了一个公共样式,直接在html页面调用就行,这样做可以减少大量的重复代码 */
+/*  
+ *@Description: 首页公共样式 这一部分代码的头部小导航栏与上面的精品推荐模块有重复,可以将他们声明一个类在html中直接调用
+ * @Version: 0.1.1
+ * @Author: Dreamer
+ * @Date: 2021-12-29 15:18:04
+ * @LastEditors: Dream
+ * @LastEditTime: 2021-12-30 19:55:40
+*/
+.main {
+    margin-top: 20px;
+    margin-bottom: 34px;
+    /*?因为前面的li有一个下margin,这里要减去*/
+}
+
+/* main里面的头部结束 */
+.main .hd {
+    height: 40px;
+    /* background-color: #00a4ff; */
+}
+
+.main .hd h2 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+
+.main .hd ul {
+    width: 412px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.main .hd li {
+    float: left;
+    margin-left: 72px;
+}
+
+.main .hd li:first-child {
+    margin: 0;
+}
+
+.main .hd li a {
+    height: 40px;
+    line-height: 35px;
+    color: #a5a5a5;
+}
+
+.main .hd>a {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    padding: 12px 28px 0 0;
+}
+
+.main a:hover,
+.main .hd a:hover {
+    color: #00a4ff;
+}
+
+/* main里面的头部结束 */
+
+/* main里面的身体开始 */
+.main .bd img {
+    width: 100%;
+}
+
+.main .bd a {
+    display: block;
+}
+
+.mian .bd .left {
+    width: 228px;
+    height: 392px;
+}
+
+.main .bd .left a {
+    width: 228px;
+    height: 392px;
+    margin-right: 15px;
+}
+
+.main .bd .right {
+    width: 957px;
+}
+
+.main .bd .right .top {
+    width: 957px;
+    height: 100px;
+    margin-bottom: 22px;
+}
+
+.main .bd .right .top a {
+    width: 957px;
+    height: 100px;
+}
+
+.main .bd .right .bottom li {
+    position: relative;
+    float: left;
+    width: 228px;
+    height: 270px;
+    margin-right: 15px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.main .bd .right .bottom li img {
+    transform: scale(1.1);
+    /*?图片不标准，有点小*/
+}
+
+.main .bd .right .bottom li:last-child {
+    margin: 0;
+}
+
+.main .bd .right .bottom li h5 {
+    margin-top: 22px;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #050505;
+}
+
+.main .bd .right .bottom li p {
+    position: absolute;
+    bottom: 26px;
+    color: #999;
+    font-size: 12px;
+    padding: 0 20px;
+}
+
+.main .bd .right .bottom li p span {
+    color: #ff7c2d;
+}
+
+.main .bd .right .bottom li:hover {
+    box-shadow: 0px 2px 5px 0px rgba(118, 118, 118, 0.5);
+    transform: translateY(-3px);
+}
+
+/* main里面的身体结束 */
+
+/* mian模块结束 */
+
+/*?第二个首页两个样式相同模块的代码*/
+/* main2部分开始 */
+.main2 {
+    margin-bottom: 34px;
+}
+
+/* main2头部开始 */
+.main2 .hd {
+    height: 40px;
+}
+
+.main2 .hd h2 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+
+.main2 .hd ul {
+    width: 412px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.main2 .hd li {
+    float: left;
+    margin-left: 72px;
+}
+
+.main2 .hd li:first-child {
+    margin: 0;
+}
+
+.main2 .hd li a {
+    height: 40px;
+    line-height: 35px;
+    color: #a5a5a5;
+}
+
+.main2 .hd>a {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    padding: 12px 28px 0 0;
+}
+
+.main2 a:hover,
+.main2 .hd a:hover {
+    color: #00a4ff;
+}
+
+/* main2头部结束 */
+
+/* main2身体开始 */
+.main2 .bd li {
+    position: relative;
+    float: left;
+    width: 228px;
+    height: 270px;
+    margin-right: 15px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.main2 .bd li:last-child {
+    margin: 0;
+}
+
+.main2 .bd li a img {
+    transform: scale(1.1);
+}
+
+.main2 .bd li h5 {
+    margin-top: 22px;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #050505;
+}
+
+.main2 .bd li p {
+    position: absolute;
+    bottom: 26px;
+    color: #999;
+    font-size: 12px;
+    padding: 0 20px;
+}
+
+.main2 .bd li p span {
+    color: #ff7c2d;
+}
+
+.main2 .bd li:hover {
+    box-shadow: 0px 2px 5px 0px rgba(118, 118, 118, 0.5);
+    transform: translateY(-3px);
+}
+
+/* main2身体结束 */
+
+/* main2部分结束 */
+
+/* 牛人推荐开始 */
+.teacher .hd {
+    height: 40px;
+}
+
+.teacher .hd h2 {
+    font-size: 20px;
+    color: #494949;
+}
+
+.teacher li {
+    position: relative;
+    float: left;
+    width: 228px;
+    height: 320px;
+    margin: 0 15px 15px 0;
+    background-color: #ffffff;
+}
+
+.teacher li:nth-child(5),
+.teacher li:nth-child(9) {
+    margin: 0;
+}
+
+.teacher li:nth-child(6),
+.teacher li:nth-child(6) a {
+    width: 471px;
+    height: 320px;
+}
+
+.teacher li:nth-child(6) a img {
+    transform: scale(1);
+}
+
+.teacher li a {
+    display: block;
+    width: 228px;
+    height: 320px;
+}
+
+.teacher li a img {
+    transform: scale(1.1);
+}
+
+.teacher li a {
+    position: relative;
+    display: block;
+    width: 228px;
+    height: 320px;
+    overflow: hidden;
+}
+
+.teacher li>span {
+    position: absolute;
+    top: 10px;
+    right: -2px;
+    width: 84px;
+    height: 20px;
+    font-size: 10px;
+    color: #fb3f48;
+    text-align: center;
+    line-height: 20px;
+    background: url(../images/rectangle.png) no-repeat;
+}
+
+/* !下面这一部分需要修改动画 */
+.teacher li .in {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 228px;
+    height: 123px;
+    background-color: #000000;
+    opacity: .3;
+    transition: height 1s linear;
+    color: #fff;
+}
+
+.teacher li .in strong {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.teacher li .in p {
+    width: 175px;
+    height: 54px;
+    line-height: 18px;
+    /*?下面4行代码是多行溢出显示省略号*/
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.teacher li:hover .in {
+    height: 320px;
+}
+
+.teacher li:hover .in p {
+    overflow: visible;
+    white-space: normal;
+    -webkit-line-clamp: 10;
+}
+
+/* 牛人推荐结束 */

@@ -1,0 +1,213 @@
+/* 公共样式 */
+
+/* 版心 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部开始 */
+header {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    /* position: fixed; 
+    top: 0;
+    z-index: 999;
+    background-color: #f3f5f7; */
+}
+
+header .nav {
+    width: 1366px;
+    /*?我的电脑屏幕宽度,可以调适配自己的,后期可能需要优化*/
+    height: 43px;
+    margin: 26px auto;
+}
+
+/* logo部分开始 */
+.logo h1 {
+    width: 195px;
+    height: 41px;
+}
+
+.logo h1 a {
+    display: block;
+    width: 195px;
+    height: 41px;
+    background: url(../images/logo.png) no-repeat;
+    font-size: 0;
+}
+
+/* logo部分结束 */
+
+/* 顶部导航栏开始 */
+.navbar {
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    margin-left: 50px;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: #050505;
+    font-size: 18px;
+    padding: 0 10px;
+
+}
+
+.navbar ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+/* 顶部导航栏结束 */
+
+/* 顶部搜索框开始 */
+.search {
+    float: right;
+    width: 410px;
+    height: 42px;
+    border: #00a4ff 2px solid;
+    border-right: none;
+}
+
+.search input {
+    float: left;
+    width: 360px;
+    height: 38px;
+    padding-left: 20px;
+
+}
+
+.search input::placeholder {
+    color: #bfbfbf;
+}
+
+.search button {
+    float: left;
+    height: 38px;
+    width: 48px;
+    background: #00a4ff url(../images/fa-search.png) no-repeat center;
+    cursor: pointer;
+}
+
+/* 顶部搜索框结束 */
+
+/* 个人中心开始 */
+.personal {
+    float: right;
+    height: 42px;
+    margin: 0 15px 0 35px;
+}
+
+.personal li {
+    float: left;
+    font-size: 14px;
+}
+
+.personal li a:first-child {
+    float: left;
+    color: #666;
+    line-height: 42px;
+    margin-right: 22px;
+}
+
+.personal li:nth-child(2) a {
+    width: 24px;
+    height: 34px;
+    background: url(../images/remid_pic.png) no-repeat center 12px,
+        url(../images/circle1.png) no-repeat 17px 8px;
+}
+
+.personal li:nth-child(3) a {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    margin-top: 6px;
+    background: url(../images/user_hp.png) no-repeat;
+}
+
+.personal li a:last-child:hover {
+    color: #00a4ff;
+}
+
+/* 个人中心结束 */
+
+/* 头部结束 */
+
+/* 底部开始 */
+footer {
+    /* margin-top: 100px; */
+    margin-top: 85px;
+    height: 274px;
+    background-color: #fff;
+}
+
+.footer-in {
+    padding-top: 30px;
+}
+
+.footer-l {
+    float: left;
+}
+
+.footer-logo a {
+    /*?底部logo,这个地方搞不好也需要优化*/
+    display: block;
+    width: 195px;
+    height: 41px;
+}
+
+.footer-l p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.footer-l>a {
+    /* ?下载App,后期做后端可能需要优化*/
+    display: block;
+    width: 120px;
+    height: 36px;
+    margin-top: 14px;
+    color: #00a4ff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 36px;
+    border: #00a4ff 1px solid;
+}
+
+.footer-l>a:hover {
+    color: #fff;
+    background-color: #00a4ff;
+    cursor: pointer;
+}
+
+.footer-r {
+    float: right;
+    color: #333;
+}
+
+.footer-r dl {
+    padding-left: 140px;
+    float: right;
+    width: 240px;
+}
+
+.footer-r dt {
+    font-size: 16px;
+    height: 30px;
+}
+
+.footer-r dd {
+    font-size: 12px;
+    height: 20px;
+}
+
+/* 底部结束 */
